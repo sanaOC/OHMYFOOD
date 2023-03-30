@@ -1,0 +1,507 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
+    margin: auto;
+    background-color: #F7F7F7 ;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    margin: 14px 0 0;
+    z-index: 2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0px;
+    background: white;
+}
+.header__image {
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner__local{
+    background: #EAEAEA;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.banner__local--text{
+    text-align: center;
+    font-weight: 500;
+    color:#353535;
+    font-family: 'Roboto', sans-serif;
+}
+.fa-solid{
+    padding-right: 10px;
+    color: #353535;
+}
+.section{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    Background : #F6F6F6;
+    width: 100%;
+    text-align: center;
+}
+.section__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 10px;
+    color: #353535;
+}
+.section__subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 13px;
+}
+/********boutons********/
+.button{
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+.button:hover{
+    opacity: .7;
+    box-shadow:none;
+}
+.button__text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+/****bouton flèche****/
+.header__button{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform cubic-bezier(0, 0, 0.2, 1) .5s; 
+}
+.header__button:hover{
+    transform: translate(5px);
+}
+.fa-arrow-left{
+    font-size: 29px;
+    padding: 0px 30px;
+    bottom: 35px;
+    position: relative;
+}
+.main{
+}
+.main__image{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center -200px;
+    height: 400px;
+    background-size: cover;
+}
+.main__image--gout{
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.main__image--enchantee{
+    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+.main__image--francaise{
+    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.main__image--delice{
+    background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+.main__menu{
+    background: #F7F7F7;;
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    bottom: 80px;
+    padding: 70px 50px;
+    width: 80%;
+    margin: AUTO;
+}
+.main__menu--title{
+    font-family: 'Shrikhand', cursive;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 0;
+}
+.menu__subtitle{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.menu__subtitle::after{
+    background-color: #99e2d0;
+    content: "";
+    height: 3px;
+    position: relative;
+    width: 40px;
+    display: block;
+}
+.menu__text{
+    box-shadow: 0px 4.01149px 15.0431px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 15px;
+    margin-bottom: 21px;
+    background: white;
+}
+.main__menu--subtitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.text__description--line_two{
+    font-weight: 300;
+}
+
+/*animation prix*/
+
+  .menu__item {
+    font-family:'Roboto';
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    border-radius: 12px;
+    margin: 1rem 0px;
+    box-shadow: rgb(0 0 0 / 10%) 0.25rem 0.25rem 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .menu__item--header {
+    overflow: hidden;
+    flex: 1;
+  }
+  .menu__item--confirmation {
+    background-color: #99E2D0;
+    margin: -16px -80px -16px 16px;
+    height: 128px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+  }
+  .menu__item--description{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .menu__item:hover .menu__item--confirmation {
+    margin-right: -16px;
+  }
+  .menu__item--wrapicon {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    /*transform: rotate(180deg);
+    transition-duration: 0.5s;
+  }
+    .menu__item:hover .menu__item--wrapicon {
+    transform: rotate(0);*/
+  }
+  .menu__item--icon {
+    color: #99E2D0;
+  }
+  
+/*fin animation prix*/
+
+
+.main__button{
+    text-align: center;
+    padding-top: 30px;
+    }
+
+.function{
+    padding: 30px 40px;
+    display:flex;
+    flex-direction: column;
+    background: #FFFFFF;
+}
+.function__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.step{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.step__content{
+    height: 85px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.step__content:hover{
+    background: #F5EDFF;
+}
+.step__number {
+    position: relative;
+    right: 12px;
+}
+.step__number--order{
+    font-family: 'Roboto', sans-serif;
+    background: #9356dc;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step__text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    left: 14%;
+    padding-right: 30px;
+}
+.step__icon{
+    position: relative;
+    left: 8%;
+}
+.step__icon .fa-solid{
+    color: #7E7E7E;
+}
+.step__icon .fa-solid:hover{
+    color: #9356DC;
+}
+/*liste des restaurants*/
+.restaurant{
+    padding: 30px 40px;
+    display:flex;
+    flex-direction: column;
+    background: #F7F7F7;
+}
+.restaurant__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.cards{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap
+}
+.cards__item{
+    margin-top: 40px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    height: 350px;
+    width: 100%;
+}
+.cards__item--image{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 230px;
+}
+.cards__item--nouveau{
+    background: #99E2D0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    padding: 5px;
+    color: #008766;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px; 
+    height: 15px;  
+    width: 20%;
+    text-align: center;
+    bottom: 80%;
+    position: relative;
+    left: 70%;
+}
+.card__item--text{
+    height: 60px;
+    padding:15px ;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.hotel__text--title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.hotel__text--local{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+/*animation du coeur*/
+.menu__btn {
+    font-size: 30px;
+    height: 32 px;
+    width: 32 px;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+  }
+  .menu__btn:hover::before {
+    opacity: 1;
+  }
+  .menu__btn::before {
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  }
+  .card__like {
+    background-color: white !important;
+  }
+  .menu__like {
+    transition-duration: 0.25s;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+  }
+  .menu__btn:hover .menu__like--noBg {
+    opacity: 0;
+  }
+/******footer******/
+.footer{
+    background-color: #353535;
+    height: 200px;
+    padding: 25px;
+    margin-top: 70px;
+}
+/*changer la couleur du logo en blanc*/
+.footer__logo{
+    filter: invert(100%);
+    width: 30%;
+    padding: 10px 40px;
+}
+.footer__list--line{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.footer__link{
+    text-decoration: none;
+    list-style: none; 
+    color: white;
+}
+.footer__link--icon{
+    margin-right: 5px;    
+}
+/*****************desktop*******************/
+@media only screen and (min-width : 992px)
+{
+    .button{
+        width: 40%;
+    }
+    .step{
+        flex-wrap: nowrap;
+    }
+    .step__content{
+        margin: 20px 20px;
+    }
+    .step__icon {
+        position: unset; 
+        left:unset; 
+    }
+    .step__text{
+        position: unset; 
+        left: unset;
+    }
+    .cards{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .cards__item{
+        width: 23%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .footer__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 60%;
+        padding-top: 20px;
+    }
+    .footer__logo{
+        width: 15%;
+    }
+}
+
