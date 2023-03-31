@@ -9,7 +9,7 @@ Dynamisez un site web avec des animations CSS
 *Un site responsive sur mobile, tablette et desktop  
 *Validation W3C en HTML et CSS  
 *Le site doit être parfaitement compatible avec les dernières versions desktop de Chrome et Firefox  
-##__Compétences évaluées__  
+## __Compétences évaluées__  
 *Intégrer une maquette en mobile-first  
 *Mettre en œuvre des animations CSS  
 *Versionner son projet avec Git et Github  
