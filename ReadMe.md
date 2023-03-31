@@ -1,8 +1,8 @@
-#__Ohmyfood__   
+# __Ohmyfood__   
 Projet 4 du parcours Intégrateur Web d'OpenClassrooms :  
 Dynamisez un site web avec des animations CSS  
 
-##__Objectifs:__    
+## __Objectifs:__    
 *Développer un site proposant le menu de 4 restaurants parisiens  
 *Des animations réalisées avec CSS, sans JavaScript  
 *Utiliser SASS serait un plus  
