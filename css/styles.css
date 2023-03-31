@@ -80,7 +80,7 @@ body {
 }
 .button:hover{
     opacity: .7;
-    box-shadow:none;
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.7);
 }
 .button__text{
     font-family: 'Roboto', sans-serif;
