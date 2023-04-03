@@ -166,6 +166,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
+
+.main{
+    background:white;
+}
+
 /****bouton flèche****/
 .header__button{
     border: none;
@@ -212,7 +217,6 @@ body {
     position: relative;
     bottom: 80px;
     padding: 70px 50px;
-    width: 80%;
     margin: AUTO;
 }
 .main__menu--title{
@@ -264,6 +268,7 @@ body {
 /*animation prix*/
 
 .menu__item {
+    height: 65px;
     font-family:'Roboto';
     background-color: white;
     padding: 16px;
@@ -285,10 +290,16 @@ body {
     overflow: hidden;
     flex: 1;
 }
+.menu__item--title{
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 .menu__item--confirmation {
     background-color: #99E2D0;
     margin: -16px -80px -16px 16px;
-    height: 128px;
+    height: 100px;
     width: 64px;
     display: flex;
     align-items: center;
@@ -296,6 +307,10 @@ body {
     transition-duration: 0.5s;
 }
 .menu__item--description{
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -448,6 +463,7 @@ body {
     left: 70%;
 }
 .card__item--text{
+    text-overflow: ellipsis;
     height: 60px;
     padding:15px ;
     color: black;
@@ -457,6 +473,7 @@ body {
     justify-content: space-between;
 }
 .hotel__text--title{
+    text-overflow: ellipsis;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -546,6 +563,9 @@ body {
 /*****************desktop*******************/
 @media only screen and (min-width : 992px)
 {
+    .main__menu{
+        width: 80%;
+    }
     .button{
         width: 40%;
     }
