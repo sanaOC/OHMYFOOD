@@ -492,8 +492,8 @@ body {
 /*animation du coeur*/
 .menu__btn {
     font-size: 30px;
-    height: 32 px;
-    width: 32 px;
+    height: 32px;
+    width: 32px;
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
@@ -503,10 +503,10 @@ body {
     cursor: pointer;
     position: relative;
     background-color: black;
-  }
+}
 .menu__btn:hover::before {
     opacity: 1;
-  }
+}
 .menu__btn::before {
     opacity: 0;
     transition: 0.5s;
@@ -517,10 +517,10 @@ body {
     height: 100%;
     width: 100%;
     background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  }
+}
 .card__like {
     background-color:  #f6f6f6 !important;
-  }
+}
 .menu__like {
     transition-duration: 0.25s;
     background-color: #f6f6f6;
