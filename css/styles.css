@@ -59,20 +59,24 @@ body {
     margin: auto;
     background: #D2D2D2; 
 }
+/*------loader------*/
 .loader {
+    /*pour fixer loader au centre*/
     position: fixed;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    animation: loader 0.02s;
-    animation-delay: 1.75s;
-    animation-fill-mode: both;
-    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    /*animation*/
+    animation: loader 0.02s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    /*pour que le loader apparaisse au dessus de la page*/
+    z-index: 10000;
   }
     .loader__item {
     animation: jump 1s;
@@ -158,6 +162,7 @@ body {
     transition: 0.3s;
     font-family: 'Roboto', sans-serif;
 }
+/*****animation boutons******/
 .button:hover{
     opacity: .7;
     box-shadow:0px 4px 10px rgba(0, 0, 0, 0.7);
@@ -332,11 +337,6 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    /*transform: rotate(180deg);
-    transition-duration: 0.5s;
-    }
-    .menu__item:hover .menu__item--wrapicon {
-    transform: rotate(0);*/
 }
 .menu__item--icon {
     color: #99E2D0;
